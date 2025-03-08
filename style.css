@@ -59,21 +59,49 @@ nav ul li a:hover {
 }
 
 #hero h1 {
-    font-size: 3.2rem;
-    margin-bottom: 0.5rem;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
     color: #0056b3;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    margin-bottom: 2rem;
 }
 
 #hero h2 {
     font-size: 2.4rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: #333;
 }
 
 #hero p {
     font-size: 1.3rem;
     color: #555;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-contact {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1rem;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.hero-contact p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-contact i {
+    color: #0056b3;
+    margin-right: 0.8rem;
 }
 
 #hero img {
@@ -359,7 +387,7 @@ footer {
     }
     
     #hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
     
     #hero h2 {
@@ -368,6 +396,17 @@ footer {
     
     #hero p {
         font-size: 1.1rem;
+    }
+    
+    .hero-contact p {
+        font-size: 0.9rem;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero-contact i {
+        margin-right: 0;
+        margin-bottom: 0.3rem;
     }
     
     #services, #contact, #about {
