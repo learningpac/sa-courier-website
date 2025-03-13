@@ -43,7 +43,7 @@ nav a:hover {
 /* Header Section */
 .header-section {
     margin-top: 80px;
-    background-image: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
+    background-image: url('https://images.unsplash.com/photo-1605276373954-0c4a208d83d6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80');
     background-size: cover;
     background-position: center;
     padding: 6rem 2rem;
@@ -87,6 +87,13 @@ nav a:hover {
     justify-content: center;
 }
 
+.header-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .header-buttons a {
     padding: 1rem 2rem;
     background: var(--primary-color);
@@ -94,6 +101,10 @@ nav a:hover {
     text-decoration: none;
     border-radius: 4px;
     transition: all 0.3s ease;
+    border: 2px solid rgba(255,255,255,0.2);
+    font-weight: 500;
+    text-align: center;
+    min-width: 180px;
 }
 
 .header-buttons a:hover {
@@ -285,27 +296,46 @@ nav a:hover {
 }
 
 @media (max-width: 480px) {
+    .header-section {
+        padding: 2rem 1rem;
+        margin-top: 100px;
+    }
+
     .header-section h1 {
         font-size: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     .header-section p {
         font-size: 1rem;
+        margin-bottom: 1.5rem;
     }
 
     .header-buttons {
         flex-direction: column;
         width: 100%;
+        gap: 0.75rem;
     }
 
     .header-buttons a {
         width: 100%;
-        margin-bottom: 1rem;
+        margin: 0;
+        padding: 0.75rem 1rem;
     }
 
     nav ul {
         flex-direction: column;
         align-items: center;
+        gap: 0.75rem;
+    }
+
+    header {
+        padding: 0.75rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 }
 
